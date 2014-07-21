@@ -15,7 +15,7 @@ body{
 #prlx{
 	height: 100%;
 	width: 100%;
-	background: url("../images/grey.gif") 50% no-repeat fixed;
+	background: url("../images/tan.gif") 50% no-repeat fixed;
 	background-size: cover;
 }
 
@@ -34,8 +34,12 @@ body{
 	text-align: center;
 }
 
-.portimg{
+.portimgtxt{
 	margin-bottom: 25px;
+}
+
+.portimg{
+	border-radius:2%;
 }
 
 .portimg:hover{

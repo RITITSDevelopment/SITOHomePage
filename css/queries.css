@@ -13,6 +13,9 @@
 		height: auto;
 		margin-bottom: 50px;
 	}
+	#contact img{
+		display:none;
+	}
 }
 
 @media screen and (min-height: 0px) and (min-width: 700px){
