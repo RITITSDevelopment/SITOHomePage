@@ -1,285 +1,146 @@
-html,
-body{
-	width:100%;
-	height: 100%;
-	font-family: 'Open Sans', sans-serif;
+#homeLogo{
+  text-align: center; 
+  padding-top: 250px;
+  padding-bottom: 200px;
 }
 
-/*@media (orientation: landscape){*/
-#top-section{
-	height: 100%;
-	text-align: center;
-	position: relative;
+#homeDown{
+  text-align: center;
 }
 
-#prlx{
-	height: 100%;
-	width: 100%;
-	background: url("../images/grey.gif") 50% no-repeat fixed;
-	background-size: cover;
+#homeSection{
+  background: #29ABE2 url("../img/light_blue.png") repeat center center;
+
+  z-index: 10;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  padding: 1.25rem;
 }
 
-/*@media screen and (min-width:1000px){
-#top-section{
-	background-color: #FFFFFF;
-	//width:100%;
-}
-}*/
+#aboutSection, #aboutHome, #tigerCenter, #jobDeveloper{
+  background: #29ABE2 url("../img/orange.gif") repeat center center;
 
-#portfolio{
-	color:white;
-	height: 100%;
-	background-color: #428bca;
-	
-	text-align: center;
+  z-index: 35;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  padding: 1.25rem;
 }
 
-.portimg{
-	margin-bottom: 25px;
+#portfolioSection, #officeHome, #aboutMission, #currentTeam, #newsRoom, #jobDesigner{
+  background: #29ABE2 url("../img/tan.gif") repeat center center;
+
+  z-index: 30;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  padding: 1.25rem;
 }
 
-.portimg:hover{
-	opacity: .8;
+#officeLearning, #aboutVision, #imagineRIT, #jobBA{
+    background: #29ABE2 url("../img/grey.gif") repeat center center;
+
+    z-index: 25;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    padding: 1.25rem;
+  }
+
+#officeSection, #officeCulture, #teamBuilder{ 
+  background: #29ABE2 url("../img/blue.gif") repeat center center;
+
+  z-index: 27;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  padding: 1.25rem;
 }
 
-#bgoverlay{
-	/*background-color: rgba(0, 0, 0, 0.5);*/
-	width: 100%;
-	height:100%;
+#contactSection, #officeTeam, #aboutAdvisors, #pastTeams, #sisExtension{
+  background: #29ABE2 url("../img/yellow.gif") repeat center center;
+
+  z-index: 20;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  padding: 1.25rem;
 }
 
-
-
-#about{
-	background-color: #FFFFFF;
-	height: 100%;
-	padding-top:50px;
-	padding-bottom:50px;
-	text-align: center;
+#officeTeam span, #currentTeam span, #pastTeams span{
+  color: #F36E21;
+  font-weight: bold;
 }
 
-#culture{
-	color:white;
-	padding-top:50px;
-	padding-bottom:50px;
-	background-color: #73bf45;
-	height: 100%;
-	text-align: center;
+#officeTeam span:hover, #currentTeam span:hover, #pastTeams span:hover{
+  color: #F36E21;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
-#Web{
-	padding-top: 150px;
-	padding-bottom: 150px;
-	height: auto;
-	background-color:white;
-	text-align:center;
+.learn{
+  color: #FFFFFF;
+  font-weight: bold;
 }
 
-#Web2{	
-	color:white;
-	padding-top: 150px;
-	padding-bottom: 150px;
-	height: auto;
-	background-color: #428bca;
-	text-align: center;
+/*** ---Start Portfolio Section/Page Styling--- ***/
+.overlay {
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.6);
+    display:none;
 }
 
-#learning{	
-	color:white;
-	padding-top: 150px;
-	padding-bottom: 150px;
-	height: auto;
-	background-color: #73bf45;
-	text-align: center;
+.portfolioTitle{
+  color: white;
+  position: relative;
+  top: 100px;
+  font-size: 24px;
+  text-decoration: underline;
 }
 
-#team{
-	padding-top: 150px;
-	height: auto;
-	text-align: center;
+.portfolioImg{
+  position: relative;
+  border: 2px solid #000000;
+  width: 254px;
 }
 
-#Web3{	
-	padding-top: 150px;
-	padding-bottom: 150px;
-	height: auto;
-	text-align: center;
+.portfolioImg:hover .overlay{
+  display: block;
 }
 
-.jobbtn{
-	margin-top:20px;
+.portfolioslider{
+  margin-bottom: 40px;
+  border: 2px solid #000000;
 }
 
-.vcenter{
- display: inline-block;
- vertical-align: middle;
+.appLink{
+  font-weight: 600;
 }
 
-#apply{
-	width:100%;
+.appLink a{
+  color: #f36e21;
 }
 
-#contact{
-	color:white;
-	background-color:#222222;
-	//opacity: 1;
-	width:100%;
+.appLink a:hover{
+  color: #f36e21;
+  text-decoration: underline;
 }
+/*** ---End Portfolio Section/Page Styling--- ***/
 
-.formelm{
-	margin-bottom:50px;
-}
-
-#logo{
-	border-radius: 5%;
-	//opacity: 0.8;
-	//background-color: white;
-	padding-left: 15px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	width: 75%;
-	display: block;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:100px;
-}
-
-.glyphicon{
-	color:black;
-	margin-top: 50px;
-	font-size: 5em;
-	vertical-align: middle;
-	opacity:.5;
-}
-
-.glyphicon:hover{
-	opacity:1;
-}
-
-
-.navbar{
-	margin-bottom:0;
-}
-
-.nav-text{
-	margin-top: 15px;
-	margin-bottom: 15px;
-	color:white;
-}
-
-#text{
-	padding-left:10px; 
-	padding-right:10px;
-	top:150px;
-	font-size:2em;
-    position:absolute;    
-    background-color:white;
-}
-
-#test{
-	background: #fff;
-	border-radius: 50%;
-	border: 1px solid #428bca;
-	width: 100%;
-	height: 100%;
-	max-width: 210px;
-	max-height: 210px;
-	padding: 10%;
-}
-
-#test2{
-	background: #fff;
-	border: 1px solid #428bca;
-	margin-bottom: 25px;
-}
-
-#test2:hover{
-	border: 5px solid #428bca;	
-}
-
-#test:hover{
-	border: 5px solid #428bca;	
-}
-
-.header{
-	padding-bottom: 1.5em;
-
-}
-
-.rogue-text{
-	font-size: 40px;
-	padding-bottom:1.5em;
-	padding-top: 1em;
-}
-
-.thumbnail:hover{
-	border: 1px solid white;
-}
-
-.btn{
-	white-space: normal;
-}
-
-.modal{
-	color:black;
-	height: 400px;
-    top: 50% !important;
-    overflow: hidden;
-}
-
-#navbar.affix{
-	position: fixed;
-    top: 0;
+#contact_message_row{
+    position: absolute;
+    right: .2em;
     width: 100%;
-    z-index:1;
+    z-index: 100;
 }
 
-a:focus, a:active{
-	outline:none;
-}
-
-.testimg{
-	height: 100%;
-	margin-right: auto;
-	margin-left: auto;
-	border:1px white solid;
-	border-radius: 50%;
-	//margin-bottom: 100px;
-}
-
-#webtest{
-	padding-bottom: 35px;
-}
-
-#myCarousel{
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 25px;
-	//width: 75%;
-}
-
-.carousel-caption{
-	position: static;
-	text-align: center;
-	color: black;
-}
-
-.carousel-indicators{
-	bottom: -10px;
-}
-
-.carousel-indicators li{
-	border: 1px solid black;
-}
-
-.carousel-control.left, .carousel-control.right {
-    background-image: none
-}
-
-.carousel-indicators .active{
-	background-color:black;
-}
-
-.glyphicon-chevron-left, .glyphicon-chevron-right{
-	color:black;
+#contact_message_result
+{
+    color:white;
+    margin-top: .67em;
+    margin-bottom: .67rem;
 }

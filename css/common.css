@@ -1,0 +1,247 @@
+body{
+  margin:0;
+  padding:0;
+  font-family: 'Average Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.row{
+  max-width: 75em;
+}
+
+.row .row{
+  margin:0;
+}
+
+.orbit-caption{
+  text-align: center;
+}
+
+/* Fixed sidebar on certain pages */
+.pageSidebar{
+    position: fixed;
+    margin-top: 15px;
+}
+/* Each section on a page has a height of at least 700px */
+.home
+{
+  min-height:700px;
+}
+/* Fixed back for parallax */
+.slide{
+  background-attachment: fixed;
+  width:100%;
+  height:auto;
+  position: relative;
+  padding:140px 0;
+}
+
+/*** ---Start Topbar Styling--- ***/
+#nav-head
+{
+    padding: 0;
+    z-index: 51;
+    background: #FFFFFF;
+    color: #000000;
+}
+
+.navActive{
+  background: #008cba;
+  cursor: default;
+  color: white;
+}
+
+.navActive a{
+  background: #008cba !important;
+  cursor: default;
+  color: white !important;
+}
+
+#topBarRight{
+    background: #FFFFFF;
+    color: #000000;
+}
+
+.top-bar{
+    box-shadow: 1px 5px 5px #666666;
+    height: 60px;
+    padding-top: 5px;
+}
+
+.top-bar .name{
+    height: 60px;
+}
+/*** ---End Topbar Styling--- ***/
+
+/*** ---Start Sidebar Styling--- ***/
+#sub-nav
+{
+    margin-top:48px;
+}
+
+#sub-nav ul
+{
+    z-index: 0;
+    padding-top: 10px;
+}
+
+#sub-nav.fixed
+{
+    z-index: 19;
+}
+
+.sub-nav li{
+    float: none;
+    display: block;
+}
+/*** ---End Sidebar Styling--- ***/
+
+/*** ---Start Textbox Styling--- ***/
+.summary{
+  background: -webkit-gradient(linear, center top, center bottom, from(rgba(230, 230, 230, 0.25)),color-stop(100%, rgba(246, 246, 244, 0.4)));
+  background: -webkit-linear-gradient(top,rgba(230, 230, 230, 0.25) ,rgba(246, 246, 244, 0.4) 100%);
+  background: -moz-linear-gradient(top,rgba(230, 230, 230, 0.25) ,rgba(246, 246, 244, 0.4) 100%);
+  background: -ms-linear-gradient(top,rgba(230, 230, 230, 0.25) ,rgba(246, 246, 244, 0.4) 100%);
+  background: -o-linear-gradient(top,rgba(230, 230, 230, 0.25) ,rgba(246, 246, 244, 0.4) 100%);
+  background: linear-gradient(to bottom,rgba(230, 230, 230, 0.25) ,rgba(246, 246, 244, 0.4) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3FE6E6E6, endColorstr=#66F6F6F4, GradientType=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#3FE6E6E6', endColorstr='#66F6F6F4', GradientType=0)";
+  border-style: none;
+  border-color: transparent;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: dosis, sans-serif;
+  font-weight: 300;
+  position: relative;
+  padding: 17px 10px 15px;
+}
+
+.projectSummary{
+  background: -webkit-gradient(linear, center top, center bottom, from(rgba(230, 230, 230, 0.25)),color-stop(100%, rgba(246, 246, 244, 0.4)));
+  background: -webkit-linear-gradient(top,rgba(230, 230, 230, 0.25) ,rgba(246, 246, 244, 0.4) 100%);
+  background: -ms-linear-gradient(top,rgba(230, 230, 230, 0.25) ,rgba(246, 246, 244, 0.4) 100%);
+  background: -o-linear-gradient(top,rgba(230, 230, 230, 0.25) ,rgba(246, 246, 244, 0.4) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3FE6E6E6, endColorstr=#66F6F6F4, GradientType=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#3FE6E6E6', endColorstr='#66F6F6F4', GradientType=0)";
+  border-style: none;
+  border-color: transparent;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: dosis, sans-serif;
+  font-weight: 300;
+  position: relative;
+  padding: 17px 10px 15px;
+}
+/*** ---Start Textbox Styling--- ***/
+
+/*** ---Start Image Styling--- ***/
+/* This is the default image styling */
+.picture
+{
+    margin-top: 50px;
+    margin-bottom: 5px;
+    width: 144px;
+    height: 144px;
+    border-radius: 72px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    border: 2px solid #000000;
+}
+/*** ---This is the image styling within the Jobs.php page. Slight Difference--- ***/
+.jobPicture
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 144px;
+    height: 144px;
+    border-radius: 72px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    border: 2px solid #000000;
+    display: inline !important;
+}
+
+.jobTestimonial{
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #f5f5f5;
+  height: 100%;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+hr.style {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style:after {
+    content: "§";
+    display: inline-block;
+    position: relative; 
+    top: -0.8em;  
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: #F5F5F5;
+}
+/*** ---This is the image styling within the Jobs.php page. Slight Difference--- ***/
+
+/* Slide Image styling on the home page. */
+.slideImage{
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 144px;
+  height: 144px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  border: 2px solid #000000;
+}
+
+/*** ---Start Footer Styling--- ***/
+
+#footer
+{
+    clear: both;
+    position: relative;
+    z-index: 0;
+    height: 50px;
+    max-width: 100%;
+    padding-top: 1em;
+    background-color: #FFFFFF;  
+}
+
+#footer_contents{
+  height: inherit;
+  margin: 0 auto;
+  padding-top: 1em;
+  color: #000000;
+}
+
+#footerLeft{
+  float: left;
+  font-size: 12px;
+}
+
+#footerRight{
+  text-align: right;
+  float: right;
+  font-size: 12px;
+}
+
+#footer a:link, #footer a:visited{
+  color: #000000;
+  text-decoration: none;
+}
+
+#footer a:hover{
+  color: #F73713;
+  text-decoration: underline;
+}
