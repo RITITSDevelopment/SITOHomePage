@@ -1,4 +1,0 @@
-SITOHomePage
-============
-
-SITO Home Page

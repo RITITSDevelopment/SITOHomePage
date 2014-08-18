@@ -4,6 +4,7 @@
 	<title>Sito Site</title>
 	<!-- meta tag used to adjust to mobile -->
 	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+	<meta charset = "UTF-8">
 	<link href = "css/bootstrap.min.css" rel = "stylesheet">
 	<link href = "css/queries.css" rel = "stylesheet">
 	<link href = "css/stylesheet.css" rel = "stylesheet">
@@ -33,7 +34,7 @@
 				<ul class = "nav navbar-nav">
 					<li><a href = "index.html#portfolio" class = "select">What We've Done</a></li>
 					<li><a href = "index.html#about" class = "select">What We Do</a></li>
-					<li><a href = "index.html#culture" class = "select">Our Culture</a></li> 
+					<li><a href = "index.html#culture" class = "select">Who We Are</a></li> 
 					<li><a href = "index.html#contact" class = "select">Contact</a></li>	
 					<li><a href = "jobs.html" class = "select">Jobs</a></li>
 				</ul>
@@ -41,55 +42,51 @@
 		</div>
 	</nav>
 
-
-	<div id = "Web">
+	<!-- Mission Section -->
+	<div id = "mission" class = "iconSections" style = "background-color: white;">
 		<div class = "vcenter">
 			<div class = "container">
 				
 				<div class = "row text-center">
 
 					<div class = "col-md-12">
-						<img src = "images/Mission-16.png" id = "webtest">
-
+						<img class = "iconPadding" src = "images/Mission-16.png" alt = "Mission Icon">
 					</div>
+					
 					<div class = "col-md-12">
 						<h3>Mission</h3>
-						<p>The Student IT Office (SITO) is a new exciting way for students to get work experience while providing a valuable service to RIT through the development of technical projects. Although this IT office helps the RIT campus, this also helps the students who run it; they will be getting work experience that is essential to their professional learning and development.
-							. 
+						<p>SITO provides students with ongoing experiential learning opportunities in the areas of software development, design, project management, and business management. Students are exposed to end-to-end project and application development life cycles. 
 						</p>
 					</div>
-
 				</div>
-
 			</div>
 		</div>
 	</div>
 
-
-	<div id = "Web2">
+	<!-- Vision Section -->
+	<div id = "vision" class = "iconSections" style = "background-color: #428bca; color: white;">
 		<div class = "container vcenter">
 			<div class = "row">
 				<div class = "col-md-12">
-					<img src = "images/Vision-18.png" id = "webtest">
+					<img class = "iconPadding" src = "images/Vision-18.png" alt = "Vision Icon">
 
 				</div>
 				<div class = "col-md-12">
 					<h3>Vision</h3>
-					<p>Our vision is to create a self-directed student group whose purpose is to complete small to medium sized software projects. Students will solicit work from campus-wide academic and business units, utilize project management practices to complete tasks, and design, develop, and test according to ITS development and security standards. This group will provide students an on-going opportunity for experiential learning in business management, project management, and software development life cycle; while providing a valuable service to RIT software needs. A Project Advisory Group will oversee this student endeavor.
-						. 
+					<p>To be a fully functioning student IT office that manages, creates, develops, tests, implements, and supports technology to enhance the student experience.
 					</p>
 				</div>
 			</div>
 		</div>
 	</div>
 
-
-	<div id = "team">
+	<!-- Advisor Section -->
+	<div id = "advisor" class = "iconSections">
 		<div class = "container vcenter">
 			<div class = "row text-center">
 
 				<div class = "col-md-12">
-					<img src = "images/Advisor-17.png" id = "webtest">
+					<img class = "iconPadding" src = "images/Advisor-17.png" alt = "Advisor Icon">
 
 				</div>
 
@@ -97,7 +94,8 @@
 					<h3>Advisory Board</h3>
 				</div>
 				
-				<div class = "col-md-12" id = "webtest">
+				<!-- Advisory Board Slideshow -->
+				<div class = "col-md-12">
 					
 					<div id = "myCarousel" data-interval = "3000" data-ride = "carousel" class = "carousel slide">
 						<ol class = "carousel-indicators">
@@ -111,7 +109,7 @@
 
 						<div class = "carousel-inner">
 							<div class = "item active">
-								<img src = "images/ChrisBooth.png" class = "testimg">					
+								<img src = "images/ChrisBooth.png" class = "carouselImg" alt = "Chris Booth">					
 								<div class = "carousel-caption">
 									<h3>Chris Booth</h3>
 									<p>Director, Project Management Office</p>
@@ -120,7 +118,7 @@
 
 
 							<div class = "item">
-								<img src = "images/LisaHupf.png" class = "testimg">
+								<img src = "images/LisaHupf.png" class = "carouselImg" alt = "Lisa Hupf">
 								<div class = "carousel-caption">
 									<h3>Lisa Hupf</h3>
 									<p>Sr. Business and Technical Analyst</p>
@@ -129,7 +127,7 @@
 
 
 							<div class = "item">
-								<img src = "images/RickMyles.png" class = "testimg">
+								<img src = "images/RickMyles.png" class = "carouselImg" alt = "Rick Myles">
 								<div class = "carousel-caption">
 									<h3>Rick Myles</h3>
 									<p>Enterprise Web Applications Manager</p>
@@ -137,7 +135,7 @@
 							</div>
 
 							<div class = "item">
-								<img src = "images/KimSowers.png" class = "testimg">
+								<img src = "images/KimSowers.png" class = "carouselImg" alt = "Kim Sowers">
 								<div class = "carousel-caption">
 									<h3>Kim Sowers</h3>
 									<p>Director, Application Development</p>
@@ -145,15 +143,15 @@
 							</div>
 
 							<div class = "item">
-								<img src = "images/JamesVallino.png" class = "testimg">
+								<img src = "images/JamesVallino.png" class = "carouselImg" alt = "James Vallino">
 								<div class = "carousel-caption">
 									<h3>James Vallino</h3>
-									<p>Prof. & Chair, Software Engineering</p>
+									<p>Prof. &amp; Chair, Software Engineering</p>
 								</div>
 							</div>
 
 							<div class = "item">
-								<img src = "images/LaurieJacobson.png" class = "testimg">
+								<img src = "images/LaurieJacobson.png" class = "carouselImg" alt = "Laurie Jacobson">
 								<div class = "carousel-caption">
 									<h3>Laurie Jacobson</h3>
 									<p>IT Manager, Application Developmen</p>
@@ -170,24 +168,25 @@
 						</a>
 
 					</div>
-					
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<nav class = "navbar navbar-inverse navbar-static-top footer">
-			<div class = "container-fluid">
-				<p class = "nav-text">
-					Developed by the Student IT Office - Copyright &copy; Rochester Institute of Technology. All Rights Reserved <br/>
-					Copyright Infringement | Privacy Statement | Disclaimer | Nondiscrimination
-				</p>
-			</div>
-		</nav>
+	<!-- Footer -->
+	<nav class = "navbar navbar-inverse navbar-static-top footer">
+		<div class = "container-fluid">
+			<p class = "nav-text">
+				Developed by the Student IT Office - Copyright &copy; Rochester Institute of Technology. All Rights Reserved <br/>
+				Copyright Infringement | Privacy Statement | Disclaimer | Nondiscrimination
+			</p>
+		</div>
+	</nav>
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="js/bootstrap.js"></script>
-		<script type="text/javascript" src="js/ajaxForm.js"></script>
-		<script src="js/scroll.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/ajaxForm.js"></script>
+	<script src="js/scroll.js"></script>
 
-	</body>
-	</html>		
+</body>
+</html>		

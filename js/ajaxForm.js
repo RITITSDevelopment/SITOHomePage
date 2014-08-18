@@ -31,7 +31,7 @@ $(document).ready(function() {
 
       $("#button").html("Sending Message....");
 
-  	    $.ajax({
+  	 $.ajax({
     	type: "POST",
     	url: "contact.php",
     	data: varData,

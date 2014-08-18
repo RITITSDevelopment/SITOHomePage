@@ -5,8 +5,8 @@
 	$phone = $_POST['phone'];
 	$message = $_POST['message'];
 
-	$to = "jaydesignsgfx@gmail.com";
+	$to = "sito@rit.edu";
 	$subject = "SITO Email";
 
-	mail("jmp1548@rit.edu", $subject, $message . "\n\nPhone Number: " . $phone . "\nName: " . $name, "From: " . $email);
+	mail($to , $subject, $message . "\n\nPhone Number: " . $phone . "\nName: " . $name, "From: " . $email);
 ?>
