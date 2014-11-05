@@ -178,6 +178,14 @@ a:focus, a:active{
 	padding-bottom: 35px;
 }
 
+.history{
+	padding-bottom: 50px;
+}
+
+.socialMedia{
+	align: right;
+}
+
 #myCarousel{
 	margin-right: auto;
 	margin-left: auto;
@@ -208,4 +216,8 @@ a:focus, a:active{
 
 .glyphicon-chevron-left, .glyphicon-chevron-right{
 	color:black;
+}
+
+.icon{
+	margin: 0px 5px 10px 5px;
 }

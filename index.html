@@ -4,11 +4,23 @@
 	<title>Sito Site</title>
 	<!-- meta tag used to adjust to mobile -->
 	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+	<link rel="icon" type="image/ico" href="images/favicon.png">
 	<meta charset = "UTF-8">
 	<link href = "css/bootstrap.min.css" rel = "stylesheet">
 	<link href = "css/stylesheet.css" rel = "stylesheet">
 	<link href = "css/queries.css" rel = "stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<!--Animsition-->
+	<link rel="stylesheet" type="text/css" href="css/ani/animsition.min.css" />
+	<script type="text/javascript" scr="js/ani/jquery.animsition.min.js"></script>
+
+	<!--Flex slider-->
+	<link rel="stylesheet" href="css/flex/flexslider.css" type="text/css" media="screen" />
+	<!-- FlexSlider -->
+    <script defer src="js/flex/jquery.flexslider.js"></script>
+	<!-- Modernizr -->
+  	<script src="js/flex/modernizr.js"></script>
 
 </head>
 <body>
@@ -26,7 +38,6 @@
 			</div>
 		</div>
 	</div>
-	
 
 	<!-- navbar setup -->
 	<div id = "navbar">
@@ -47,12 +58,13 @@
 
 				<!-- all navbar content built to work for toggling -->
 				<div class = "collapse navbar-collapse navbar-right" id = "navHeaderCollapse">
+
 					<ul class = "nav navbar-nav">
 						<li><a href = "#portfolio" class = "select">What We've Done</a></li>
 						<li><a href = "#about"  class = "select">What We Do</a></li>
 						<li><a href = "#culture" class = "select">Who We Are</a></li> 
 						<li><a href = "#contact" class = "select">Contact</a></li>	
-						<li><a href = "jobs.html" class = "select">Jobs</a></li>
+						<li><a href = "jobs.html" class = "animsition-link">Jobs</a></li>
 					</ul>
 				</div>
 			</div>
@@ -65,40 +77,71 @@
 			<div class = "row text-center">
 				<h1 class = "text-center header">What We've Done</h1>
 				<!-- Tiger Center -->
-				<div class="col-xs-12 col-md-4 link portImgTxt">
+				<!--<div class="col-xs-12 col-md-4 link portImgTxt">
 					<a href="https://classsearch.rit.edu/classSearch/home#/search">
 						<img class="img-responsive portImgRadius" src="images/TigerCenter3.png" alt = "Tiger Center">
 					</a>
 					<h3>Tiger Center</h3>
-				</div>
+				</div>-->
 				<!-- Virtual Newsroom -->
-				<div class="col-xs-12 col-md-4 link portImgTxt">
+				<!--<div class="col-xs-12 col-md-4 link portImgTxt">
 					<a href="http://www.rit.edu/cias/virtualworkspaceatrit/">
 						<img class="img-responsive portImgRadius" src="images/NewsRoom3.png" alt = "News Room">
 					</a>
 					<h3>Virtual Newsroom</h3>
-				</div>
+				</div>-->
 				<!-- Team Builder -->
-				<div class="col-xs-12 col-md-4 link portImgTxt">
+				<!--<div class="col-xs-12 col-md-4 link portImgTxt">
 					<a href="http://www.rit.edu/innovationcenter/teambuilder/">
 						<img class="img-responsive portImgRadius" src="images/TeamBuilder3.png" alt = "Team Builder">
 					</a>
 					<h3>Team Builder</h3>
-				</div>
+				</div>-->
 				<!-- Imagine RIT -->
-				<div class="col-xs-12 col-md-4 link portImgTxt">
+				<!--<div class="col-xs-12 col-md-4 link portImgTxt">
 					<a href="https://www.rit.edu/imagine/proposals/">
 						<img class="img-responsive portImgRadius" src="images/ImagineRIT3.png" alt = "Imagine RIT">
 					</a>
 					<h3 class = "porttxt">Imagine RIT</h3>
-				</div>
+				</div>-->
 				<!-- SIS Extension -->
-				<div class="col-xs-12 col-md-4 link portImgTxt">
+				<!--<div class="col-xs-12 col-md-4 link portImgTxt">
 					<a href="http://www.rit.edu/its/sisextension/">
 						<img class="img-responsive portImgRadius" src="images/SISExtension3.png" alt = "SIS Extension">
 					</a>
 					<h3>SIS Extension</h3>
-				</div>
+				</div>-->
+			<section class="slider">
+				<div class="flexslider">
+	          	<ul class="slides">
+	            	<li>
+	  	    	    <a href="https://classsearch.rit.edu/classSearch/home#/search">
+						<img class="img-responsive portImgRadius" src="images/TigerCenter3.png" alt = "Tiger Center">
+					</a>
+	  	    		</li>
+	  	    		<li>
+	  	    	    <a href="http://www.rit.edu/cias/virtualworkspaceatrit/">
+						<img class="img-responsive portImgRadius" src="images/NewsRoom3.png" alt = "News Room">
+					</a>
+	  	    		</li>
+	  	    		<li>
+	  	    	    <a href="http://www.rit.edu/innovationcenter/teambuilder/">
+						<img class="img-responsive portImgRadius" src="images/TeamBuilder3.png" alt = "Team Builder">
+					</a>
+	  	    		</li>
+	  	    		<li>
+	  	    	    <a href="https://www.rit.edu/imagine/proposals/">
+						<img class="img-responsive portImgRadius" src="images/ImagineRIT3.png" alt = "Imagine RIT">
+					</a>
+	  	    		</li>
+	  	    		<li>
+	  	    			<a href="http://www.rit.edu/its/sisextension/">
+						<img class="img-responsive portImgRadius" src="images/SISExtension3.png" alt = "SIS Extension">
+					</a>
+	  	    		</li>
+	          	</ul>
+	        	</div>
+    		</section>
 			</div>
 		</div>
 	</div>
@@ -235,6 +278,12 @@
 				Developed by the Student IT Office - Copyright &copy; Rochester Institute of Technology. All Rights Reserved <br/>
 				Copyright Infringement | Privacy Statement | Disclaimer | Nondiscrimination
 			</p>
+			<a href="www.facebook.com/studentitoffice">
+				<img class="icon" src="images/fb-icon.png" alt="FB-icon" width="30px"/>
+			</a>
+			<a href="www.twitter.com/studentitoffice">
+				<img class="icon" src="images/twitter-icon.png" alt="twitter-icon" width="30px"/>
+			</a>
 		</div>
 	</nav>
 
@@ -280,6 +329,15 @@
 	});
 
 
+	</script>
+
+	<script>
+		// Can also be used with $(document).ready()
+	$(window).load(function() {
+	  $('.flexslider').flexslider({
+	    animation: "slide"
+	  });
+	});
 	</script>
 
 	<script>
