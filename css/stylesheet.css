@@ -14,12 +14,13 @@ body{
 #prlx{
 	height: 100%;
 	width: 100%;
-	background: url("../images/background2.png") 50% no-repeat fixed;
+	background: url("../images/background3.png") 50% no-repeat fixed;
 	background-size: cover;
+	background-position:center;
 }
 
 #portfolio{
-	color:white;
+	color:#ffffff;
 	height: 100%;
 	padding-top: 150px;
 	padding-bottom: 150px;
@@ -32,7 +33,7 @@ body{
 }
 
 .portImgRadius{
-	border-radius:2%;
+	border-radius:0%;
 }
 
 .portImgRadius:hover{
@@ -133,7 +134,7 @@ body{
 }
 
 .circleBtn:hover{
-	border: 5px solid #428bca;	
+	border: 5px solid #428bca;
 }
 
 .header{
@@ -218,8 +219,17 @@ a:focus, a:active{
 
 .glyphicon-chevron-left, .glyphicon-chevron-right{
 	color:black;
-}
 
+}
+.glyphicon-chevron-left img{
+	max-width:30px;
+}
 .icon{
 	margin: 0px 5px 10px 5px;
+}
+
+@media (max-width:768px) and (orientation:portrait){
+	#prlx {
+		height:60%;
+	}
 }
